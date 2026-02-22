@@ -20,3 +20,24 @@ Then in your terminal you can run:
 ```sh
 tinify ./path-to/filename.jpg
 ```
+
+## Sanitize Filename
+Quickly rename files to a web-friendly format. This script converts filenames to lowercase, replaces spaces and underscores with hyphens, and removes non-alphanumeric characters (except dots and hyphens).
+
+Usage:
+```sh
+./sanitize-filename.sh "My File Name_2026.txt"
+# Output: my-file-name-2026.txt
+```
+
+## To JPEG
+Convert PNG images to high-quality JPEG format.
+
+**Dependency:** Requires [ImageMagick](https://imagemagick.org/) (`magick` command).
+
+Usage:
+```sh
+./tojpeg.sh image.png
+# Output: image.jpg
+```
+

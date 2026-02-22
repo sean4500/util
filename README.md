@@ -1,10 +1,10 @@
 # Utilities
-This is a library of utilities I find useful for my daily work. Some are unique, some aren't - feel free to use or modify them at your own risk.
+This is a small library of utilities I find useful for my daily work. Some are unique, some aren't - feel free to use or modify them at your own risk.
 
 ## Tinify
-Simple tool to optimize images for the web directly from your command line. Uses the Tinify API - you'll have to provide your own API key. What I do is add an alias in my .zshrc file to make it easy to call. Don't forget your API key!
+Simple tool to optimize images for the web directly from your command line. Uses the Tinify API - you'll have to provide your own API key.
 
-For example:
+Add alias in `~/.zshrc`
 ```sh
 # Tinify alias
 alias tinify='path/to/tinify.sh'
@@ -24,9 +24,15 @@ tinify ./path-to/filename.jpg
 ## Sanitize Filename
 Quickly rename files to a web-friendly format. This script converts filenames to lowercase, replaces spaces and underscores with hyphens, and removes non-alphanumeric characters (except dots and hyphens).
 
+Add alias in `~/.zshrc`
+```sh
+# Tinify alias
+alias sanitize='path/to/sanitize-filename.sh'
+```
+
 Usage:
 ```sh
-./sanitize-filename.sh "My File Name_2026.txt"
+sanitize "My File Name_2026.txt"
 # Output: my-file-name-2026.txt
 ```
 
@@ -35,9 +41,14 @@ Convert PNG images to high-quality JPEG format.
 
 **Dependency:** Requires [ImageMagick](https://imagemagick.org/) (`magick` command).
 
-Usage:
+Add alias in `~/.zshrc`
 ```sh
-./tojpeg.sh image.png
-# Output: image.jpg
+# tojpeg alias
+alias tojpeg='path/to/tojpeg.sh'
 ```
 
+Usage:
+```sh
+tojpeg image.png
+# Output: image.jpg
+```
